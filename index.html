@@ -10,11 +10,24 @@
 <!-- google fonts manrope -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?
+family=Manrope:wght@800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ <!-- tailwind custom -->
+ <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'common-color':'#FF4240',
+        }
+      }
+    }
+  }
+</script>
 <style>
   .font-manrope{
     font-family: 'Manrope', sans-serif;
-    font-family: 'Poppins', sans-serif;
   }
 </style>
 </head>
@@ -28,7 +41,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content text-base mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Home</a></li>
+              <li class="text-common-color"><a>Home</a></li>
               <li><a>About</a></li>
               <li><a>Pages</a></li>
               <li><a>BLog</a></li>
@@ -39,7 +52,7 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu text-base menu-horizontal px-1">
-            <li class=""><a>Home</a></li>
+            <li class="text-common-color"><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>Pages</a></li>
             <li><a>Blog</a></li>
@@ -47,11 +60,12 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn btn-error text-white">Get Ticket</a>
+          <a class="btn bg-common-color text-white">Get Ticket</a>
+      
         </div>
       </div>
     </nav>
-    <div class="carousel w-full">
+    <div class="carousel w-full mx-4 lg:mx-125 my-24 h-[550px]">
       <div id="slide1" class="carousel-item relative w-full">
         <img src="/Images/1.png" class="w-full" />
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -83,7 +97,58 @@
     </div>
   </header>
   <main>
+    <section class="text-center">
+      <h2 class="text-5xl font-extrabold mb-6">Professional Hockeys Club</h2>
+      <p class="text-base max-w-4xl mx-auto">The National Hockey League was organized at the Windsor Hotel
+         in Montreal on November 26, 1917, after the suspension of operations of its 
+         predecessor organization, the National Hockey Association (NHA),
+         which had been founded in 1909 in Renfrew, Ontario.</p>
+    </section>
+    <section class="my-24 text-center">
+     <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 mx-36">
+      <div>
+        <div class="radial-progress text-rose-600" style="--value:87;" role="progressbar">87%</div>
+        <h3 class="my-2">Prayer Facility</h3>
+        <p>you can call prayer in our club.we are honour to give you this facility</p>
+      </div>
+      <div>
+        <div class="radial-progress text-green-700" style="--value:95;" role="progressbar">95%</div>
+        <h3 class="my-2">Experienced Coach</h3>
+        <p>we always try to find our best coaches for our club </p>
+      </div>
+      <div>
+        <div class="radial-progress text-orange-400" style="--value:90;" role="progressbar">90%</div>
+        <h3>Senior Player</h3>
+        <p>senior and experienced player is always our favourite choice</p>
+      </div>
+      <div>
+        <div class="radial-progress text-blue-700" style="--value:80;" role="progressbar">80%</div>
+        <h3 class="my-2">Training Ground</h3>
+        <p>we have a big playground where our players can practise </p>
+      </div>
+     </div>
+    </section>
+    <section class="text-center my-3">
+      <h2 class="text-3xl my-2">Program Sections</h2>
+      <p>we have 3 kinds of class where you can join as your experience</p>
 
+    </section>
+    <section class="text-center my-5">
+      <h2 class="text-3xl my-3">Our New Products</h2>
+      <p>Watch our new products and get it</p>
+    </section>
+    <section>
+      <div class="flex">
+        <div>
+          <img src="Images/5.png" alt="">
+        </div>
+        <div>
+          <h3>World Cup Flags Football</h3>
+          <p>buy and get our amazing product</p>
+          <P><span class="text-red-700">Price-$22.00</span>Delivery Free;Free</P>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
 
